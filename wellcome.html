@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="3; url=/index.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+        }
+        h2{
+            color: red;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+        }
+        h3{
+            color: red;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Thank you!! We have successfull submitted your reqest.</h2>
+    <h3>Please Wait.........</h3>
+    <h4></h4>
+
+
+    <script>
+
+        let counter = document.querySelector('h4');
+        let count = 1;
+
+        setInterval(()=>{
+
+            counter.innerTextL = count;
+            count++
+        },1000)
+    </script>
+</body>
+</html>

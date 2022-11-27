@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Red_vibes</title>
+    
+    <style>
+        *{
+            box-sizing: border-box;
+            
+        }
+        html, body{
+            font-family: "poppins" sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            box-sizing: border-box;
+        }
+        .nav_bar{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 22px;
+            color:  white;
+        }
+        .nav_bar ul{
+            display: flex;
+            list-style: none;
+
+        }
+        .nav_bar ul li{
+            color: yellow;
+            padding: 10px 30px;
+            position: relative;
+        }
+            .active{
+                background: red;
+                border-top-left-radius: 100px;
+                transition: 0.5s;
+
+            }
+            .nav_bar ul li:hover{
+                background: red;
+                transition: 0.4s;
+                border-top-left-radius: 100px;
+            }
+                .nav_bar img{
+                    width: 100px;
+
+
+                }
+            h1{
+                background: rgb(87, 83, 83);
+                border-top-left-radius: 100px;
+                transition: 0.5s;
+                
+            }
+            span{
+                color: yellow;
+                
+            }
+        
+        h2{
+            width: 100%;
+            color:  red;
+            font-size: 35px;
+            margin-top: 250px;
+            margin-left: 17%;
+        }  
+      h3{
+            color: red;
+            font-size: 35px;
+            margin-left: 18%;
+        }
+        .front{
+            color: darkgray;
+            font-size: 20px;
+            margin-left: 21.5%;
+        }
+        p{
+            color: darkgray;
+            font-size: 20px;
+            margin-left: 21.5%;
+        }
+        .list{
+            font-size: 12px;
+            list-style: none;
+        }
+        .list ul{
+            color: yellow;
+            width: 20%;
+            display: flex;
+            margin-left: 10%;
+            margin-top: 25px;
+            
+        }
+        .list ul li{
+            padding: 10px 30px;
+            position: relative;
+            list-style: none;
+        }
+        .style{
+        display: block;
+        margin-left: 80%;
+        margin-top: 200px;
+        }
+        .one{
+            width: 40px;
+            height: 50px;
+            background: red;
+            color: red;
+            text-align: center;
+        }
+        .two{
+            width: 40px;
+            height: 50px;
+            background: darkgrey;
+            margin-left: -18%;
+            color: darkgrey;
+            text-align: center;
+        }
+        .three{
+            width: 40px;
+            height: 50px;
+            background: yellow;
+            color: yellow;
+            text-align: center;
+        }
+        .about{
+            display: flex;
+            margin-top: 200px;
+            align-items: center;
+            text-align: center;
+          width: 100%;
+          margin-left: 10%;
+            
+        }
+      
+        .about img{
+            width: 20%;
+            height: auto;
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+        }
+        .content{
+            text-align: center;
+            background-color: rgb(24, 21, 21);
+            width: 60%;
+            height: 60%;
+           
+        }
+        .content h4{
+            text-align: center;
+            font-size: 25px;
+            margin-top: 20px;
+
+        }
+        .content p{
+            color: white;
+            text-align: center;
+            font-size: 11px;
+            font-weight: bold;
+            margin-left: -10px;
+            margin-top: 20px;
+            margin: 5px;
+        }
+        .content ul{
+            display: flex;
+            text-align: center;
+            font-size: 25px;
+            margin-top: 20px;
+            color: rgb(255, 23, 100);
+            justify-content: space-around;
+        }
+        .content ul li{
+            display: flex;
+            text-align: center;
+            font-size: 20px;
+            margin-top: 20px;
+
+        }
+        .content img{
+            width: 20px;
+            color: yellow;
+            border-radius: 100%;
+        }
+        .content img:hover{
+            background: yellow;
+        }
+        
+        h4{
+            margin-top: 100px;
+            text-align: center;
+            color: red;
+            font-size: 18px;
+        }
+.service{
+    text-align: center;
+}
+.box{
+    display: flex;
+    text-align: center;
+}
+.design{
+    width: 50%;
+    clear: both;
+
+}
+.management{
+    width: 50%;
+    clear: both;
+}
+.data{
+    width: 50%;
+    clear: both;
+}
+.box img{
+    width: 33.3px;
+    border-radius: 100%;
+}
+h5{
+    font-size: 15px;
+    color: yellow;
+}
+.box p{
+    text-align: center;
+    font-size: 14px;
+    margin-left: -1%;
+}
+.real p{
+    margin-left: 3%;
+    background-color: rgb(24, 21, 21);
+}
+.mobile p{
+    margin-left: 3%;
+    background-color: rgb(24, 21, 21);
+}
+
+.image-container{
+    margin: 0 auto;
+    width: 30%;
+    box-shadow: 0 15px 30px rgb(24, 21, 21);
+    margin-bottom: 20px;
+    transition-duration: 1s;
+}
+.image-container:hover{
+    width: 40%;
+    box-shadow: 0 18px 36px white;
+}
+
+    img{
+    
+    width: 100%;
+    height: auto;
+   
+}
+.image-description{
+    text-align: center;
+    color: darkgray;
+    font-size: 15px;
+}
+.lightbox{
+    display: table;
+    transition-duration: 1s;
+    position: fixed;
+    top: -100;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background:  white;
+}
+.lightbox:target{
+    top: 0;
+}
+.lightbox-content{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.lightbox img{
+    max-width: 100%;
+    height: auto;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+    [class*="col-"] {
+  width: 100%;
+    }
+    [class*="nav_bar"] {
+  text-align: center;
+  font-size: 18px;
+  margin-left: 18%;
+    }
+    [class*="front"] {
+    margin-left: 45%;
+}
+[class*="h2"] {
+    margin-left: 38%;
+}
+[class*="h3"] {
+    margin-left: 38%;
+}
+[class*="style"] {
+    margin-left: 130%;
+}
+[class*="two"] {
+    margin-left: -10%;
+}
+[class*="about"] {
+    margin-left: 50%;
+}
+[class*="h4"] {
+    margin-left: 50%;
+}
+[class*="box"] {
+    width: 150%;
+  display: flex;
+  justify-content: space-around;
+}
+[class*="real"] {
+   margin-left: 50%;
+}
+[class*="mobile"] {
+   margin-left: 50%;
+}
+[class*="insta"] {
+   margin-left: 50%;
+}
+[class*="colum"] {
+    width: 150%;
+}
+[class*="hireme"] {
+   margin-left: 50%;
+}
+[class*="colum"] {
+    width: 150%;
+}
+[class*="hhh"] {
+    width: 150%;
+    font-size: 18px;
+}
+[class*="loginbox"] {
+    margin: -1%;
+                width: 150%;
+                height: 300px;
+                background: rgb(24, 21, 21);
+                color: darkgray;
+                margin-top: 100px;
+                left: 30%;
+                position: absolute;
+                transform: translate(-50,-50%);
+                box-sizing: border-box;
+                padding: 60px 20px;
+                opacity: 0.8;
+   
+}
+}
+[class*="instabot"] {
+    margin-left: 50%;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+   .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+   .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+   .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+   .col-s-12 {width: 100%;}
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+/* Large devices (laptops/desktops, 992px and up) */
+.colum{
+    text-align: center;
+    color: darkgray;
+    column-count: 3;
+    column-rule: 2px groove yellow;
+}
+            .loginbox{
+                margin: -2%;
+                width: 320px;
+                height: 310px;
+                background: rgb(24, 21, 21);
+                color: white;
+                margin-top: 200px;
+                left: 39%;
+                position: absolute;
+                transform: translate(-50,-50%);
+                box-sizing: border-box;
+                padding: 70px 30px;
+                opacity: 0.9;
+            }
+            .avatar{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                position: absolute;
+                top: -50px;
+                left: calc(50% - 50px);
+            }
+            
+            .loginbox p{
+                margin: 0;
+                padding: 0;
+                font-weight: bold;
+            }
+            .loginbox input{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .loginbox input[type="text"], input[type="password"], input[type="phone"]{
+                border: none;
+                border-bottom: 1px solid white;
+                background: transparent;
+                outline: none;
+                height: 4opx;
+                color: white;
+                font-size: 16px;
+            }
+
+            .loginbox input[type="button"]{
+                border: none;
+                outline: none;
+                height: 40px;
+                background: red;
+                color: white;
+                font-size: 18px;
+                border-radius: 20px;
+                background-color: red;
+            }
+            .loginbox input[type="button"]:hover{
+                cursor: pointer;
+                background: yellow;
+                color: rgb(255, 47, 47);
+
+            }
+
+            .loginbox a{
+                text-decoration: none;
+                font-size: 12px;
+                line-height: 20px;
+                color: darkgrey;
+
+            }
+
+            .loginbox a:hover{
+                color: #ffc107;
+            }
+
+            .code{
+                margin-right: 1%;
+                font-size: 35px;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: -15px;
+                color: lightblue;    
+            }
+
+            .fa fa-envelope{
+                margin: 1%;
+            }
+            .hhh{
+                text-align: center;
+                color: red;
+                font-size: 20px;
+            }
+.instabot{
+    text-align: center;
+color: darkgray;
+font-size: 15px;
+margin-left: 10px;
+}
+button{
+text-align: center;
+justify-content: center;
+color: white;
+background-color: red;
+
+}
+button:hover{
+background-color: yellow;
+transition: 00.5s;
+}
+
+.loginbox button{
+justify-items: center;
+justify-content: center;
+font-size: 15px;
+}
+    </style>
+   
+</head>
+<body>
+    <div class="col-">
+    <div class="nav_bar">
+        <img src="logo.jpg" alt="logo">
+       
+        <ul>
+            <li class="active">Home</li>
+            <li>About</li>
+            <li>contacs</li>
+            <li>Experience</li>
+        </ul>
+    </div>
+    <h2 class="h2">Al<span>^</span>Imam Buhari</h2>
+    <h3 class="h3">( <span>$</span>Red~Vibes<span>$</span> )</h3>
+    <p class="front">Frontend Developer</p>
+    <div class="list">
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Node.Js</li>
+            <li>React</li>
+        </ul>
+    </div>
+    <div class="style">
+        <div class="one">Red</div>
+        <div class="two">Red</div>
+        <div class="three">Red</div>
+    </div>
+    <div class="about">
+        <img src="my.jpg" alt="my photo">
+        <div class="content">
+            <h4>About Me</h4>
+            <p>Hi there, nice to meet you.<br>I am a Frontend Developer who enjoys turning complex problems into simple, beutiful and intutative designs, When i'm not giving pressure to my keys on the keyboad, You'll find me watching the crypto market, Playing games or enjoying to some cool music.</p>
+            <ul>
+                <li><a href="#"><img src="ink.jpg" alt="f"></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100008183288288"><img src="face.jpg" alt="f"></a></li>
+                <li><a href="https://wa.me/qr/DK6GXMNGNCFXI1"><img src="WHATSAPP.png" alt="f"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="service">
+        <h4 class="h4">Services | Offer</h4>
+        <div class="box">
+            <div class="design">
+                <img src="wb.jpg" alt="d">
+                <h5>Web Designs</h5>
+                <p>I design frontend applications for the web</p>
+            </div>
+            <div class="management">
+                <img src="man.jpg" alt="m">
+                <h5>Web Maintainance</h5>
+                <p>I maintain existing web and mobile applications</p>
+            </div>
+            <div class="data">
+                <img src="data.jpg" alt="d">
+                <h5>Mobile Development</h5>
+                <p >I build for mobile and other hand-held devices</p>
+            </div>
+        </div>
+    </div>
+    <h4 class="h4">Frontend web applications project</h4>
+    <div class="real">
+        <div class="image-container" id="container1">
+            <a href="#image1"><img src="2.jpg" alt="p"></a>
+            <p class="image-description">love-life solved Blog web application clone</p>
+        </div>
+<br>
+<br>
+<br>
+        <div class="image-container" id="container2">
+            <a href="#image2"><img src="dev.jpg" alt="p"></a>
+            <p class="image-description">A responsive web application portfolio project</p>
+        </div>
+<br>
+<br>
+<br>
+        <div class="image-container" id="container3">
+            <a href="#image3"><img src="a.jpg" alt="p"></a>
+            <p class="image-description">E-Commerce website with diffrent walpaper on the slide</p>
+        </div>
+<br>
+<br>
+<br>
+        <div class="image-container" id="container4">
+            <a href="#image4"><img src="freelancer.jpg" alt="p"></a>
+            <p class="image-description">Online jobs finder, a real world project</p>
+        </div>
+    </div>
+
+<div class="lightbox" id="image1">
+    <a href="#container1" class="close">CLOSE</a>
+    <div class="lightbox-content">
+        <img src="2.jpg" />
+    </div>
+</div>
+
+<div class="lightbox" id="image2">
+    <a href="#container2" class="close">CLOSE</a>
+    <div class="lightbox-content">
+        <img src="dev.jpg" />
+    </div>
+
+</div>
+
+<div class="lightbox" id="image3">
+    <a href="#container3" class="close">CLOSE</a>
+    <div class="lightbox-content">
+        <img src="a.jpg" />
+    </div>
+</div>
+
+<div class="lightbox" id="image4">
+    <a href="#container4" class="close">CLOSE</a>
+    <div class="lightbox-content">
+        <img src="freelancer.jpg" />
+    </div>
+</div>
+
+<h4 class="h4">Mobile Application project</h4>
+<div class="mobile">
+<div class="image-container" id="containe1">
+    <a href="#mage1"><img src="fclone2.jpg" alt="p"></a>
+    <p class="image-description">Facebook clone app</p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="image-container" id="containe2">
+    <a href="#mage2"><img src="chatclone.jpg" alt="p"></a>
+    <p class="image-description">Tiktok clone app</p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="image-container" id="containe3">
+    <a href="#mage3"><img src="fclone.jpg" alt=""></a>
+    <p class="image-description">udemy clone app</p>
+</div>
+</div>
+<h4 class="h4">Intagram automation Bot</h4>
+<div class="insta">
+<div class="image-container" id="containe3">
+    <a href="#mage3"><img src="fclone.jpg" alt="p"></a>
+    <p class="instabot">Automatic reacts, comment, post, follow amd unfollow on instagram.</p>
+</div>
+</div>
+<h4 class="h4">Experience</h4>
+<div class="colum">
+•Full website redesigning of existing website for an improved user experience, navigation, visuals, and better search engine visibility.
+Conceived optimized landing pages in HTML, CSS & React, including and cross-browser compatibility, for the internal portal.
+Develop mobile-based features and responsiveness & make suggestions for better solutions to problems.
+Maintain Strong Internal Communication with Web designers and backend developers to improve usability.
+Assisting senior team members and developers to meet the deadlines in and during the fewer staff tenures.
+Deploying the best possible programming skills and capabilities when required, in PHP, JavaScript, HTML, SQL, and other libraries from the skillset.
+Automation Bot, like intagram automatic follow & unfollow, comment, replay and React. working with automation bot of social networks using PHP & JavaScript.
+</div>
+<h4 class="h4">Hire Me</h4>
+<div class="hireme">
+<div class="loginbox">
+                <img src="login3.png" class="avatar">
+
+                <form onsubmit="myfunc(event)">
+
+                    <p><i class="fa fa-user"></i> Name</p> 
+                    <input type="text" id="full_name" name="name" required />
+                    <p><i class="fa fa-phone"></i> Phone</p>
+                    <input type="text" name="Phone" id="p_number" required />
+                    <p><i class="fa fa-envelope"></i> Email</p>
+                    <input type="text" name="email" id="email_id" required />
+                    <a href="wellcome.html">
+                    <button onclick="myOnClickFn()">submit</button>
+                    </a>  
+                </form>
+
+</div>
+</div>
+
+<script type="text/javascript">
+
+
+function myfunc(event) {
+        event.preventDefault();
+
+        var full_name = document.getElementById("full_name").value;
+        var p_number = document.getElementById("p_number").value;
+        var email_id = document.getElementById("email_id").value;
+
+        localStorage.setItem('ls_full_name', full_name);
+        localStorage.setItem('ls_p_number', p_number);
+        localStorage.setItem('ls_email_id', email_id);
+    }
+
+    function myOnClickFn(){
+        document.location.href="wellcome.html";
+    }
+        </script>
+</body>
+</html>
