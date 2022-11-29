@@ -131,6 +131,33 @@
             color: yellow;
             text-align: center;
         }
+#mystyle_one {
+  background: red;
+  animation: mymove 3s infinite;
+}
+
+@keyframes mymove {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+#mystyle_two {
+  background: red;
+  animation: mymove 4s infinite;
+}
+
+@keyframes mymove {
+  from {background-color: darkgrey;}
+  to {background-color: purple;}
+}
+#mystyle_three {
+  background: red;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  from {background-color: yellow;}
+  to {background-color: red;}
+}
         .about{
             display: flex;
             margin-top: 200px;
@@ -595,9 +622,9 @@ font-size: 15px;
         </ul>
     </div>
     <div class="style">
-        <div class="one">Red</div>
-        <div class="two">Red</div>
-        <div class="three">Red</div>
+        <div class="one" id="mystyle_one">Red</div>
+        <div class="two" id="mystyle_two">Red</div>
+        <div class="three" id="mystyle_three">Red</div>
     </div>
     <div class="about">
         <img src="my.jpg"
